@@ -1,0 +1,113 @@
+# CISCO 7960G Beispiel Konfiguration für FritzBox 7170
+#
+# Image Version Firmware laden
+ image_version: "P0S3-8-12-00"
+
+# Anonyme Anrufe blocken
+# 0=Aus,Nutzer an/aus 1=An,Nutzer an/aus 2=Permanent aus 3=Permanent an
+anonymous_call_block: "0"
+
+# Nummern automatisch ergänzen
+# 0=Aus,Nutzer an/aus 1=An,Nutzer an/aus 2=Permanent aus 3=Permanent an
+autocomplete: "0"
+
+# Wenn Gespräch1 gehalten und Gespräch2 endet klingelt Telefon für Gespräch1
+# 0=Aus,Nutzer an/aus 1=An,Nutzer an/aus 2=Permanent aus 3=Permanent an
+call_hold_ringback: "1"
+
+# Nur sinnvoll mit Server
+# default=0 
+# call_stats: "0"
+
+# ???
+# 0=Aus,Nutzer an/aus 1=An,Nutzer an/aus 2=Permanent aus 3=Permanent an
+# call_waiting: "1"
+
+# Rufnummer übertragen?
+# 0=Aus,Nutzer an/aus 1=An,Nutzer an/aus 2=Permanent aus 3=Permanent an
+#callerid_blocking: "1"
+
+# Wenn 3er-Konferenz einer auflegt werden die anderen verbunden?
+# default=1
+cnf_join_enable: "1"
+
+# default=M/D/Y
+date_format: "D/M/Y"
+
+# URL fuer Directory Server
+ directory_url: "http://s727009053.online.de/kontalog/tbuch1.xml"
+
+# Nicht stören?
+# 0=Aus,Nutzer an/aus 1=An,Nutzer an/aus 2=Permanent aus 3=Permanent an
+dnd_control: "0"
+
+# Time Server auf ptbtime1.ptb.de
+sntp_mode: "unicast"
+sntp_server: "192.53.103.108"
+time_zone: "CET"
+dst_offset: "1"
+dst_start_month: "Jan"
+dst_start_day: ""
+dst_start_day_of_week: "Mon"
+dst_start_week_of_month: "2"
+dst_start_time: "02"
+dst_stop_month: "Dec"
+dst_stop_day: ""
+dst_stop_day_of_week: "Sunday"
+dst_stop_week_of_month: "1"
+dst_stop_time: "2"
+dst_auto_adjust: "1"
+
+# Voice Auto Detection
+# default=0
+# enable_vad: "0"
+
+# Anrufe weiterleiten
+# default=0
+local_cfwd_enable: "1"
+
+# URL for branding logo - hier kann ein Logo in 4 Graustufen 320x196 hinterlegt werden
+logo_url: "LOGO_URL"
+
+# Netzwerk Duplex Einstellen
+network_media_type: "auto"
+
+# Telnet
+phone_prompt: "CiscoIPPhone"
+phone_password: "ADMIN_PW"
+
+# Codec auswaehlen g711alaw g711ulaw g729a none
+preferred_codec: "g711ulaw"
+
+# Kann ich wenn ich spreche und das Telefon klingelt den Anruf umleiten
+semi_attended_transfer: "1"
+
+# URL for external Phone Services - Netter offener Beispiel XML Service:
+ services_url: "SERVICE_URL" 
+
+# SIP Timers
+timer_t1: "500" ; Default 500 msec
+timer_t2: "4000" ; Default 4 sec
+sip_retx: "10" ; Default 11
+sip_invite_retx: "6" ; Default 7
+timer_invite_expires: "180" ; Default 180 sec
+
+# Telnet Level 0=aus 1=an 2=volle Rechte
+telnet_level: "2"
+
+# Zeitformat
+time_format_24hr: "3"
+
+# Auflegen und schnell abheben und der Anruf bleibt
+transfer_onhook_enabled: "0"
+
+# Emergency Proxy info
+proxy_emergency: ""
+proxy_emergency_port: "5060"
+
+# Backup Proxy info
+proxy_backup: ""
+proxy_backup_port: "5060"
+
+#point to dialplan
+dial_template: dialplan

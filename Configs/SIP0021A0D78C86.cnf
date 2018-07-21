@@ -1,0 +1,33 @@
+# SIP Configuration Generic File
+
+# Call Manager
+call_manager1_addr: ""
+call_manager1_sip_port: 5060
+call_manager2_addr: ""
+call_manager2_sip_port: 5060
+
+# Line 1
+proxy1_address: ""
+proxy1_port: 5060
+line1_name: "internal_name"
+line1_authname: "SIP_ACC_NAME"
+line1_password: "SIP_ACC_PW"
+line1_displayname: "CALLER_NAME"
+line1_shortname: "DISPLAYED_NAME"
+
+# Line 2
+proxy2_address: ""
+proxy2_port: 5060
+line2_name: "internal_name"
+line2_authname: "SIP_ACC_NAME"
+line2_password: "SIP_ACC_PW"
+line2_displayname: "CALLER_NAME"
+line2_shortname: "DISPLAYED_NAME"
+
+phone_label: "TELEPHONE_NAME "
+
+# Phone Prompt (The prompt that will be displayed on console and telnet)
+phone_prompt: "TELNET_NAME"
+
+# Phone Password (Password to be used for console or telnet login)
+phone_password: "ADMIN_PW"
